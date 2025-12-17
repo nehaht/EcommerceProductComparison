@@ -1,0 +1,47 @@
+# Compiled class files
+*.class
+classes/
+
+# Log files
+*.log
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE files
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# WebDriver logs
+*.log
+chromedriver.log
+geckodriver.log
+
+# Screenshots
+screenshots/
+
+# Demo files
+*_input.txt
+product_comparison.html
+
+# GitHub specific
+.github/
