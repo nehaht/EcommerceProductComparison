@@ -38,9 +38,55 @@ A Java Selenium-based tool that searches for products across multiple e-commerce
    mvn exec:java -Dexec.mainClass="com.productcomparison.ProductComparisonApp"
    ```
 
-## Usage
+## Demo Versions
 
-1. Start the application
+The project includes multiple demo versions for different use cases:
+
+### 1. **AutoDemo** (Recommended for presentations)
+```bash
+cd src/main/java
+javac com/productcomparison/Product.java com/productcomparison/AutoDemo.java
+java com.productcomparison.AutoDemo
+```
+- Opens web browser with comparison results
+- Clickable links to actual product search pages
+- Professional UI perfect for LinkedIn demos
+
+### 2. **LiveDemo** (Interactive console)
+```bash
+cd src/main/java
+javac com/productcomparison/Product.java com/productcomparison/LiveDemo.java
+java com.productcomparison.LiveDemo
+```
+- Interactive console interface
+- Type product names to search
+- Real-time search simulation
+
+### 3. **SimpleDemo** (GUI interface)
+```bash
+cd src/main/java
+javac com/productcomparison/Product.java com/productcomparison/SimpleDemo.java
+java com.productcomparison.SimpleDemo
+```
+- Swing-based GUI window
+- Search box and results table
+- User-friendly interface
+
+### 4. **FileOutputDemo** (Export results)
+```bash
+cd src/main/java
+javac com/productcomparison/Product.java com/productcomparison/FileOutputDemo.java
+java com.productcomparison.FileOutputDemo
+```
+- Saves results to CSV file
+- Perfect for data analysis
+
+## Full Selenium Usage
+
+1. Start the main application:
+   ```bash
+   mvn exec:java -Dexec.mainClass="com.productcomparison.ProductComparisonApp"
+   ```
 2. Enter a product name when prompted
 3. Wait for results from multiple sites
 4. View comparison table with products from different sites
