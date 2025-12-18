@@ -82,10 +82,26 @@ public class AutoDemo {
         html.append(".btn:hover{background:linear-gradient(45deg,#2980b9,#3498db);transform:scale(1.05)}");
         html.append(".summary{background:rgba(255,255,255,0.95);padding:20px;border-radius:12px;text-align:center;margin-top:30px;box-shadow:0 4px 20px rgba(0,0,0,0.1)}");
         html.append("</style>");
+        html.append("<script>");
+        html.append("window.onload = function() {");
+        html.append("  if (window.screen) {");
+        html.append("    window.moveTo(0, 0);");
+        html.append("    window.resizeTo(window.screen.availWidth, window.screen.availHeight);");
+        html.append("  }");
+        html.append("};");
+        html.append("function toggleFullscreen() {");
+        html.append("  if (!document.fullscreenElement) {");
+        html.append("    document.documentElement.requestFullscreen();");
+        html.append("  } else {");
+        html.append("    document.exitFullscreen();");
+        html.append("  }");
+        html.append("}");
+        html.append("</script>");
         html.append("</head><body>");
         html.append("<div class='container'>");
         
         html.append("<div class='header'>");
+        html.append("<button onclick='toggleFullscreen()' style='position:absolute;top:20px;right:20px;background:#3498db;color:white;border:none;padding:10px 15px;border-radius:5px;cursor:pointer;font-size:14px;'>⛶ Fullscreen</button>");
         html.append("<h1>🛒 E-commerce Product Comparison</h1>");
         html.append("<h2>Search Results for: ").append(product).append("</h2>");
         html.append("<p>Comparing prices across ").append(products.size()).append(" products from multiple sites</p>");
