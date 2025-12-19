@@ -33,53 +33,49 @@ A Java Selenium-based tool that searches for products across multiple e-commerce
    mvn clean install
    ```
 
-3. Run the application:
+3. Run the main web browser demo:
    ```bash
-   mvn exec:java -Dexec.mainClass="com.productcomparison.ProductComparisonApp"
+   mvn exec:java -Dexec.mainClass="com.productcomparison.WebBrowserDemo"
    ```
 
-## Demo Versions
+## Quick Demo (Perfect for LinkedIn Recording)
 
-The project includes multiple demo versions for different use cases:
-
-### 1. **AutoDemo** (Recommended for presentations)
+### **WebBrowserDemo** - Main Demo (Recommended)
 ```bash
-cd src/main/java
-javac com/productcomparison/Product.java com/productcomparison/AutoDemo.java
-java com.productcomparison.AutoDemo
-```
-- Opens web browser with comparison results
-- Clickable links to actual product search pages
-- Professional UI perfect for LinkedIn demos
+# Navigate to project directory
+cd C:\ecommerce-product-comparison
 
-### 2. **LiveDemo** (Interactive console)
-```bash
-cd src/main/java
-javac com/productcomparison/Product.java com/productcomparison/LiveDemo.java
-java com.productcomparison.LiveDemo
-```
-- Interactive console interface
-- Type product names to search
-- Real-time search simulation
+# Compile project
+mvn clean compile
 
-### 3. **SimpleDemo** (GUI interface)
-```bash
-cd src/main/java
-javac com/productcomparison/Product.java com/productcomparison/SimpleDemo.java
-java com.productcomparison.SimpleDemo
+# Run web browser demo
+mvn exec:java -Dexec.mainClass="com.productcomparison.WebBrowserDemo"
 ```
-- Swing-based GUI window
-- Search box and results table
-- User-friendly interface
 
-### 4. **FileOutputDemo** (Export results)
+**What it does:**
+- ✅ Analyzes real Myntra product link (Philips Hair Straightener)
+- ✅ Compares prices across 5 Indian e-commerce sites
+- ✅ Opens professional HTML comparison page in browser
+- ✅ Shows price ranking (Flipkart ₹3,620 vs Myntra ₹4,109)
+- ✅ All "Shop Now" buttons link to actual product searches
+- ✅ Perfect for screen recording and LinkedIn demos
+
+### Other Available Demos
+
+**LiveDemo** (Interactive console):
 ```bash
-cd src/main/java
-javac com/productcomparison/Product.java com/productcomparison/FileOutputDemo.java
-java com.productcomparison.FileOutputDemo
+mvn exec:java -Dexec.mainClass="com.productcomparison.LiveDemo"
 ```
-- Saves results to CSV file
-- Perfect for data analysis
+
+**SimpleDemo** (GUI interface):
+```bash
+mvn exec:java -Dexec.mainClass="com.productcomparison.SimpleDemo"
+```
+
+**FileOutputDemo** (Export results):
+```bash
+mvn exec:java -Dexec.mainClass="com.productcomparison.FileOutputDemo"
+```
 
 ## Full Selenium Usage
 
